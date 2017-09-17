@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Save the date</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background-image: url("/img/background.jpg");
+        background-size: cover;
+        background-position: bottom right;
+        overflow-y: hidden;
+      }
+
+      .container {
+        box-sizing: border-box;
+      }
+
+      .section div {
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .card {
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 5px grey;
+      }
+
+      @media (max-width: 600px) {
+        .card {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section"><img class="card unopened" src="/img/Unopened.jpg"></div>
+      <div class="section"><img class="card back" src="/img/Back.jpg"></div>
+      <div class="section"><img class="card front" src="/img/Front.jpg"></div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.container').fullpage();
+      })
+    </script>
+  </body>
+</html>
